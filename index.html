@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author=" mc_kevin, Christian, Anto, Emmanuel, Pasqualeee; Giovanni"> 
+    <title>Team 2 Test</title>
+ 
+    <style>
+        body{
+            background: url(img/kevin.jpeg) fixed;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <!--Domanda 1-->
+    <h1 id="top"></h1>
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Che cosa è l'HTML?</h4>
+            <label for=""> Domanda 1: Che cosa è l'HTML?</label>
+            <ol>
+                <li>HighTech Modern Language</li>
+                <li>Hyper Text Markup Language</li>
+                <li>HyperTransfer Markup Language</li>
+                <li>HyperText Modern Language</li>
+            </ol>
+            <input type="number" id="domanda1">
+            <br /> <br />
+            <button onclick="verifica1()" class="btn btn-primary">Verifica</button>
+            <p id="output1"></p>
+            <br>
+            <br>
+        </div>
+    </div>
+    <!--Domanda 2-->
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Domanda 2: Qual è la differenza fondamentale tra RAM e ROM?</h4>
+            <ol>
+                <li>La RAM è volatile mentre la ROM è non volatile</li>
+                <li>La RAM è permanente mentre la ROM è temporanea</li>
+                <li>La RAM è solo di lettura mentre la ROM è di sola scrittura</li>
+                <li>La RAM è utilizzata per l'archiviazione del sistema operativo</li>
+            </ol>
+
+            <input type="number" id="domanda2">
+            <br /> <br />
+            <button onclick="verifica2()" class="btn btn-primary">Verifica</button>
+            <p id="output2"></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--Domanda 3-->
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+
+            <h4> Domanda 3: Qual è la capacità di archiviazione tipica di una ROM?</h4>
+            <ol>
+                <li>Variabile</li>
+                <li>Fissa</li>
+                <li>Espandibile</li>
+                <li>Decrescente</li>
+            </ol>
+            <input type="number" id="domanda3">
+            <br /> <br />
+            <button onclick="verifica3()" class="btn btn-primary">Verifica</button>
+            <p id="output3"></p>
+        </div>
+    </div>
+    <!--Domanda 4-->
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Qual è la funzione principale del tag <a> in HTML?</h4>
+            <ol>
+                <li>Creare una lista ordinata</li>
+                <li>Creare un'immagine</li>
+                <li>Creare un link ipertestuale</li>
+                <li>Creare un paragrafo.</li>
+            </ol>
+            <input type="number" id="domanda4">
+            <br /> <br />
+            <button onclick="verifica4()" class="btn btn-primary">Verifica</button>
+            <p id="output4"></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Quale attributo CSS viene utilizzato per impostare il tipo di bordo di un elemento?</h4>
+            <ol>
+                <li>border-style</li>
+                <li>border-width</li>
+                <li>border-color</li>
+                <li>border</li>
+            </ol>
+            <input type="number" id="domanda5">
+            <br /> <br />
+            <button onclick="verifica5()" class="btn btn-primary">Verifica</button>
+            <p id="output5"></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Quale selettore CSS viene utilizzato per selezionare tutti gli elementi con una determinata classe?</h4>
+            <ol>
+                <li>#</li>
+                <li>*</li>
+                <li>.</li>
+                <li>:</li>
+            </ol>
+            <input type="number" id="domanda6">
+            <br /> <br />
+            <button onclick="verifica6()" class="btn btn-primary">Verifica</button>
+            <p id="output6"></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Qual è il componente di Bootstrap utilizzato per creare una barra di navigazione responsive?</h4>
+            <ol>
+                <li> navbar </li>
+                <li> nav </li>
+                <li> header </li>
+                <li> menu </li>
+            </ol>
+            <input type="number" id="domanda7">
+            <br /> <br />
+            <button onclick="verifica7()" class="btn btn-primary">Verifica</button>
+            <p id="output7"></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Qual è il componente di Bootstrap utilizzato per creare una casella di avviso o messaggio?</h4>
+            <ol>
+                <li>alert</li>
+                <li>message</li>
+                <li>notification</li>
+                <li>warning</li>
+            </ol>
+            <input type="number" id="domanda8">
+            <br /> <br />
+            <button onclick="verifica8()" class="btn btn-primary">Verifica</button>
+            <p id="output8"></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Chi è il creatore di Bootstrap?</h4>
+            <ol>
+                <li>Google Inc.</li>
+                <li>Microsoft Corporation</li>
+                <li>Twitter Inc.</li>
+                <li>Facebook Inc.</li>
+            </ol>
+            <input type="number" id="domanda9">
+            <br /> <br />
+            <button onclick="verifica9()" class="btn btn-primary">Verifica</button>
+            <p id="output9"></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Quanti bit era il processore utilizzato nel primo personal computer introdotto nel 1975?</h4>
+            <ol>
+                <li>16 bit</li>
+                <li>4 bit</li>
+                <li>32 bit</li>
+                <li>8 bit</li>
+            </ol>
+            <input type="number" id="domanda10">
+            <br /> <br />
+            <button onclick="verifica10()" class="btn btn-primary">Verifica</button>
+            <p id="output10"></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Quale delle seguenti affermazioni è vera riguardo ai costrutti di iterazione in JavaScript: while, do while e for?</h4>
+            <ol>
+                <li>while e do while sono simili, ma for è utilizzato per iterazioni più complesse</li>
+                <li>while e for sono simili, ma do while è utilizzato per iterazioni più complesse</li>
+                <li>while è sempre eseguito almeno una volta, mentre do while potrebbe non essere eseguito affatto</li>
+                <li>for e do while sono simili, ma while è utilizzato per iterazioni più complesse</li>
+            </ol>
+            <input type="number" id="domanda11">
+            <br /> <br />
+            <button onclick="verifica11()" class="btn btn-primary">Verifica</button>
+            <p id="output11"></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Qual è il formato corretto per un commento HTML?</h4>
+            <ol>
+                <li>// Questo è un commento</li>
+                <li>< !-- Questo è un commento --></li>
+                <li>/* Questo è un commento */</li>
+                <li># Questo è un commento</li>
+            </ol>
+            <input type="number" id="domanda12">
+            <br /> <br />
+            <button onclick="verifica12()" class="btn btn-primary">Verifica</button>
+            <p id="output12"></p>
+        </div>
+    </div>
+    <!--Domanda 3-->
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Quale attributo HTML viene utilizzato per definire il testo alternativo per un'immagine?</h4>
+            <ol>
+                <li>alt</li>
+                <li>src</li>
+                <li>title</li>
+                <li>href</li>
+            </ol>
+            <input type="number" id="domanda13">
+            <br /> <br />
+            <button onclick="verifica13()" class="btn btn-primary">Verifica</button>
+            <p id="output13"></p>
+        </div>
+    </div>
+    <!--Domanda 4-->
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Qual è la funzione principale di CSS (Cascading Style Sheets)?</h4>
+            <ol>
+                <li>Creare contenuti dinamici</li>
+                <li>Definire la struttura del documento</li>
+                <li>Stilizzare e formattare l'aspetto di un documento HTML</li>
+                <li>Eseguire operazioni matematiche sui dati</li>
+            </ol>
+            <input type="number" id="domanda14">
+            <br /> <br />
+            <button onclick="verifica14()" class="btn btn-primary">Verifica</button>
+            <p id="output14"></p>
+        </div>
+    </div>
+    <!--Domanda 5-->
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Quale operatore viene utilizzato per concatenare due stringhe in JavaScript?</h4>
+            <ol>
+                <li>+</li>
+                <li>-</li>
+                <li>*</li>
+                <li>/</li>
+            </ol>
+            <input type="number" id="domanda15">
+            <br /> <br />
+            <button onclick="verifica15()" class="btn btn-primary">Verifica</button>
+            <p id="output15"></p>
+        </div>
+    </div>
+    <!--Domanda 6-->
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>In JavaScript, quale metodo viene utilizzato per convertire una stringa in un numero intero?</h4>
+            <ol>
+                <li> parseInt()</li>
+                <li>parseFloat()</li>
+                <li> toInt()</li>
+                <li>toInteger()</li>
+            </ol>
+            <input type="number" id="domanda16">
+            <br /> <br />
+            <button onclick="verifica16()" class="btn btn-primary">Verifica</button>
+            <p id="output16"></p>
+        </div>
+    </div>      <!--Domanda 7-->
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>In CSS, quale attributo viene utilizzato per modificare il colore del testo</h4>
+            <ol>
+                <li>text-color</li>
+                <li>color</li>
+                <li>text-style</li>
+                <li>font-color</li>
+            </ol>
+            <input type="number" id="domanda17">
+            <br /> <br />
+            <button onclick="verifica17()" class="btn btn-primary">Verifica</button>
+            <p id="output17"></p>
+        </div>
+    </div>
+    <!--Domanda 18-->
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Quale degli elementi seguenti non è un elemento di input HTML?</h4>
+            <ol>
+                <li>< input ></li>
+                <li>< button ></li>
+                <li>< select ></li>
+                <li>< label ></li>
+            </ol>
+            <input type="number" id="domanda18">
+            <br /> <br />
+            <button onclick="verifica18()" class="btn btn-primary">Verifica</button>
+            <p id="output18"></p>
+        </div>
+    </div>
+    <!--Domanda 9-->
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>Qual è il significato dell'acronimo "CSS"?</h4>
+            <ol>
+                <li>Creative Style Sheets</li>
+                <li>Cascading Style Sheets</li>
+                <li>Computer Style Sheets</li>
+                <li>Content Style Sheets</li>
+            </ol>
+            <input type="number" id="domanda19">
+            <br /> <br />
+            <button onclick="verifica19()" class="btn btn-primary">Verifica</button>
+            <p id="output19"></p>
+        </div>
+    </div>
+    <!--Domanda 10-->
+
+    <div class="card" style="width: 18rem; margin-right: 70px; margin-left: 250px; margin-bottom: 50px;">
+        <div class="card-header">
+            <h4>In HTML, quale tag viene utilizzato per creare un elenco non ordinato?</h4>
+            <ol>
+                <li>< ol ></li>
+                <li>< li ></li>
+                <li>< ul ></li>
+                <li>< list ></li>
+            </ol>
+            <input type="number" id="domanda20">
+            <br /> <br />
+            <button onclick="verifica20()" class="btn btn-primary">Verifica</button>
+            <p id="output20"></p>
+            
+        </div>
+        </div>
+        <div class="d-grid gap-2 col-4 mx-auto">
+        <a href="#top" class="btn btn-primary text-center">Torna su</a>
+    </div>
+            <script>
+
+                var punteggio = 0;  // per aggiungere un conteggio delle risposte giuste  sbagliate // in piu ad ogni risposta giusta si aggiunge = punteggio +=1;
+
+
+                function verifica1() {
+                    var risposta = document.getElementById("domanda1").value;
+                    var rispostaEsatta = document.getElementById("output1");
+
+
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1; // <-- cosi
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+                    }
+
+
+                }
+                function verifica2() {
+                    var risposta = document.getElementById("domanda2").value;
+                    var rispostaEsatta = document.getElementById("output2");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è giusta"; //
+                            punteggio += 1;
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica3() {
+                    var risposta = document.getElementById("domanda3").value;
+                    var rispostaEsatta = document.getElementById("output3");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica4() {
+                    var risposta = document.getElementById("domanda4").value;
+                    var rispostaEsatta = document.getElementById("output4");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica5() {
+                    var risposta = document.getElementById("domanda5").value;
+                    var rispostaEsatta = document.getElementById("output5");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica6() {
+                    var risposta = document.getElementById("domanda6").value;
+                    var rispostaEsatta = document.getElementById("output6");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica7() {
+                    var risposta = document.getElementById("domanda7").value;
+                    var rispostaEsatta = document.getElementById("output7");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+                }
+                function verifica8() {
+                    var risposta = document.getElementById("domanda8").value;
+                    var rispostaEsatta = document.getElementById("output8");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica9() {
+                    var risposta = document.getElementById("domanda9").value;
+                    var rispostaEsatta = document.getElementById("output9");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica10() {
+                    var risposta = document.getElementById("domanda10").value;
+                    var rispostaEsatta = document.getElementById("output10");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica11() {
+                    var risposta = document.getElementById("domanda11").value;
+                    var rispostaEsatta = document.getElementById("output11");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica12() {
+                    var risposta = document.getElementById("domanda12").value;
+                    var rispostaEsatta = document.getElementById("output12");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica13() {
+                    var risposta = document.getElementById("domanda13").value;
+                    var rispostaEsatta = document.getElementById("output13");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica14() {
+                    var risposta = document.getElementById("domanda14").value;
+                    var rispostaEsatta = document.getElementById("output14");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica15() {
+                    var risposta = document.getElementById("domanda15").value;
+                    var rispostaEsatta = document.getElementById("output15");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica16() {
+                    var risposta = document.getElementById("domanda16").value;
+                    var rispostaEsatta = document.getElementById("output16");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica17() {
+                    var risposta = document.getElementById("domanda17").value;
+                    var rispostaEsatta = document.getElementById("output17");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica18() {
+                    var risposta = document.getElementById("domanda18").value;
+                    var rispostaEsatta = document.getElementById("output18");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica19() {
+                    var risposta = document.getElementById("domanda19").value;
+                    var rispostaEsatta = document.getElementById("output19");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+
+
+                }
+                function verifica20() {
+                    var risposta = document.getElementById("domanda20").value;
+                    var rispostaEsatta = document.getElementById("output20");
+
+                    switch (risposta) {
+                        case "1":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "2":
+                            rispostaEsatta.innerHTML = " La risposta è sbagliata";
+                            break;
+                        case "3":
+                            rispostaEsatta.innerHTML = "La risposta è sbagliata";
+                            break;
+                        case "4":
+                            rispostaEsatta.innerHTML = "La risposta è giusta";//
+                            punteggio += 1;
+                            break;
+                        default:
+                            rispostaEsatta.innerHTML = "Devi scegliere un opzione";
+
+                    }
+                    alert("Il tuo punteggio è " + punteggio);
+
+                }
+               
+            </script>
+
+</body>
+</html>
